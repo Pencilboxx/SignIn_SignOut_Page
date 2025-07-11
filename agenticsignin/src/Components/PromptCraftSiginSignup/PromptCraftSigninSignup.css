@@ -1,0 +1,104 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    margin: auto;
+    padding: 200px ;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: black;
+    gap: 8px;
+}
+
+.text{
+    font-weight: 700;
+   
+}
+
+.underline{
+    width: 50px;
+    height: 4px;
+    background-color: black;
+    border-radius: 4px;
+    
+}
+
+.inputs{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    height: 40px;
+    background: #CCFD7F;
+    border-radius: 7px;
+    
+}
+
+.input img{
+    margin: 0px 15px;
+}
+
+.input input{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.forgot_password{
+    padding-left: 30px;
+    padding-top: 20px;
+    color: red;
+    font-weight: 500;
+}
+
+.forgot_password span{
+    color: blue;
+    padding-left: 1px;
+    cursor: pointer;
+}
+
+
+.submit_section{
+    display: flex;
+    gap: 30px;
+    padding-top: 15px;
+    padding-left: 40px;
+    
+}
+
+.submit{
+    color: brown;
+    cursor: pointer;
+    font-weight: 690;
+    display: flex;
+    align-items: center;
+    background-color: #CCFD7F;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.gray{
+    background: whitesmoke;
+    color: gray;
+}
