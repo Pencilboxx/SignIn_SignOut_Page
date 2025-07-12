@@ -14,8 +14,10 @@ const PromptCraftSigninSignup = () =>
     const [emailID, setEmailID] = useState("");
     const [password, setPassword] = useState("");
     
-     const handleSignUp = async (name, emailID, password) => {
-        const response = await fetch('http://localhost:5258/api/authorization/signup', {
+    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5258';
+
+    const handleSignUp = async (name, emailID, password) => {
+        const response = await fetch(`${API_BASE_URL}/api/authorization/signup`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, emailID, passwordHash: password })
@@ -29,7 +31,7 @@ const PromptCraftSigninSignup = () =>
     };
 
     const handleSignIn = async (emailID, password) => {
-        const response = await fetch('http://localhost:5258/api/authorization/signin', {
+        const response = await fetch(`${API_BASE_URL}/api/authorization/signin`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ emailID, passwordHash: password })
