@@ -1,0 +1,6 @@
+@Back_for_agenticai_HostAddress = http://localhost:5258
+
+GET {{Back_for_agenticai_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

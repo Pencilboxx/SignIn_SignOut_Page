@@ -64,7 +64,7 @@
 }
 
 .forgot_password{
-    padding-left: 30px;
+    padding-left: 620px;
     padding-top: 20px;
     color: red;
     font-weight: 500;
@@ -81,7 +81,8 @@
     display: flex;
     gap: 30px;
     padding-top: 15px;
-    padding-left: 40px;
+    align-items: center;
+    padding-left: 640px;
     
 }
 
