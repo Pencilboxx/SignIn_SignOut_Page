@@ -22,11 +22,16 @@ const PromptCraftSigninSignup = () =>
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, emailID, passwordHash: password })
         });
-        const data = await response.json();
+        let data = {};
+        if (response.headers.get("content-type")?.includes("application/json")) 
+        {
+        data = await response.json();
+   }
         if (response.ok) {
             alert(data.message || "Sign up successful!");
         } else {
             alert(data.message || "Sign up failed!");
+            console.error(data);
         }
     };
 
@@ -36,11 +41,15 @@ const PromptCraftSigninSignup = () =>
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ emailID, passwordHash: password })
         });
-        const data = await response.json();
+        let data = {};
+        if (response.headers.get("content-type")?.includes("application/json")) {
+        data = await response.json();
+    }
         if (response.ok) {
             alert("Sign in successful! Token: " + data.token);
         } else {
             alert(data.message || "Sign in failed!");
+            console.error(data);
         }
     };
 
