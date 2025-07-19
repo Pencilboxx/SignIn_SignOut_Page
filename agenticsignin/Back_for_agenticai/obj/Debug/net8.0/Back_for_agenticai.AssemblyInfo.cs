@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Back_for_agenticai")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e58e3e0407d6a72fc641e6b188648e9dd4cac08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+378af4a28694c286905b57a93004f6dca012f545")]
 [assembly: System.Reflection.AssemblyProductAttribute("Back_for_agenticai")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Back_for_agenticai")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
