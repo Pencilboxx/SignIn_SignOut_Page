@@ -40,11 +40,11 @@
 
 ## Command Lines
 
-Clone: git clone <repo-url>
-React app : npm start run
-### Build the backend file first .
-Install EF Core tools: dotnet tool install --global dotnet-ef
-Add migration: dotnet ef migrations add <MigrationName>
-Update database: dotnet ef database update
-Run the backend: dotnet run
+### Clone: git clone <repo-url>
+### React app : npm start run
+## Build the backend file first .
+### Install EF Core tools: dotnet tool install --global dotnet-ef
+### Add migration: dotnet ef migrations add <MigrationName>
+### Update database: dotnet ef database update
+### Run the backend: dotnet run
 
