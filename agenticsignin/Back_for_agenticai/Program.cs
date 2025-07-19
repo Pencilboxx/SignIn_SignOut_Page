@@ -1,5 +1,6 @@
 using Back_for_agenticai.Models;
 using Back_for_agenticai.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,10 +22,11 @@ builder.Services.AddCors(options =>
 });
 
 
-
+builder.Services.AddControllers();
 
 var users = new List<User>();
 builder.Services.AddSingleton(users);
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
@@ -37,6 +39,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
+app.MapControllers();
 
 var summaries = new[]
 {
